@@ -104,7 +104,8 @@ async function sendMessage(chatId, text, markdown = false) {
     body: JSON.stringify({
       chat_id: chatId,
       text,
-      parse_mode: html ? "HTML" : "Markdown",
+      parse_mode: markdown ? "Markdown" : "HTML",
+
     }),
   });
 }
