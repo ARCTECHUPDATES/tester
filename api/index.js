@@ -37,6 +37,8 @@ export default async function handler(req, res) {
 ★ 𝐁ᴇғᴏʀᴇ 𝐒ᴛᴀʀᴛ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ 
 
 𝐔sᴀɢᴇ: <code>/info 9876543210</code>
+/info :- get all nunber info
+/help :- get all help commands
 𝐈ғ 𝐘ᴏᴜ 𝐅ᴀᴄᴇ 𝐀ɴʏ 𝐏ʀᴏʙʟᴇᴍ 𝐂ᴏɴᴛᴀᴄᴛ 𝐎ᴡɴᴇʀ`
       );
     }
