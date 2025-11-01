@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 const BOT_TOKEN = "8522122227:AAEkfXrhqDKSBZpXXrFZWcomvJnVoFHqrGQ"; // ← अपना token डालो
 const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}`;
-const CHANNEL_USERNAME = "@ABOUT_JALLAD_PAPA"; // ← अपना Telegram channel username डालो (जैसे "@MyChannel")
+const CHANNEL_USERNAME = "@ABOUTJALLADPAPA"; // ← अपना Telegram channel username डालो (जैसे "@MyChannel")
 
 export const config = {
   api: { bodyParser: true },
@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     if (!isMember && !["/start", "/help"].some(cmd => text.startsWith(cmd))) {
       await sendMessage(
         chatId,
-        `🚫 *Access Denied!*\n𝐏ʟᴇᴀsᴇ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ:\n👉 Https://t.me/about_jallad_papa`,
+        `🚫 *Access Denied!*\n𝐏ʟᴇᴀsᴇ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ:\n👉 Https://t.me/about_jallad_papa \n ${CHANNEL_USERNAME}`,
         true
       );
       return res.status(200).send("User not joined");
