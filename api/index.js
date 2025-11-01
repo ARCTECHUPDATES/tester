@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 
 // --- CONFIG ---
-const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
+const BOT_TOKEN = "7996568178:AAHlA9KKsxC0umMzrArlhYIMHwN_2B89EPI";
 const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
 // --- For Vercel Body Parsing ---
