@@ -38,7 +38,7 @@ export default async function handler(req, res) {
 
 𝐔sᴀɢᴇ: <code>/info 9876543210</code>
 𝐈ғ 𝐘ᴏᴜ 𝐅ᴀᴄᴇ 𝐀ɴʏ 𝐏ʀᴏʙʟᴇᴍ 𝐂ᴏɴᴛᴀᴄᴛ 𝐎ᴡɴᴇʀ`,
-        { parse_mode: "HTML" }
+        true
       );
     }
 
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 🔹 <code>/help</code> — Hᴇʟᴘ ᴍᴇɴᴊ
 
 <b>Note:</b> 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📢`,
-        { parse_mode: "HTML" }
+        true
       );
     }
 
@@ -104,7 +104,7 @@ async function sendMessage(chatId, text, markdown = false) {
     body: JSON.stringify({
       chat_id: chatId,
       text,
-      parse_mode: markdown ? "Markdown" : undefined,
+      parse_mode: html ? "HTML" : "Markdown",
     }),
   });
 }
