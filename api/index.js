@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-const BOT_TOKEN = "7996568178:AAG2erz15TcfxUdU84GZwSWghFBFem1R7bg"; // 🔹 Yahan apna bot token daalo
+const BOT_TOKEN = "7996568178:AAHlA9KKsxC0umMzrArlhYIMHwN_2B89EPI"; // 🔹 Yahan apna bot token daalo
 const CHANNEL_USERNAME = "@ABOUT_JALLAD_PAPA"; // 🔹 Jis channel ko join karna mandatory hai
 
 const API_URL = "https://random-remove-batch-tea.trycloudflare.com/search?mobile=";
