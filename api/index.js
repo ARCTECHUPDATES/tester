@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     if (!isMember && !["/start", "/help"].some(cmd => text.startsWith(cmd))) {
       await sendMessage(
         chatId,
-        `🚫 *Access Denied!*\n𝐏ʟᴇᴀsᴇ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ:\n👉 Https://t.me/about_jallad_papa \n ${CHANNEL_USERNAME}`,
+        `🚫 *Access Denied!*\n𝐏ʟᴇᴀsᴇ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ:\n ${CHANNEL_USERNAME}`,
         true
       );
       return res.status(200).send("User not joined");
