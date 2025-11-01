@@ -37,8 +37,7 @@ export default async function handler(req, res) {
 ★ 𝐁ᴇғᴏʀᴇ 𝐒ᴛᴀʀᴛ 𝐉ᴏɪɴ 𝐎ᴜʀ 𝐂ʜᴀɴɴᴇʟ 
 
 𝐔sᴀɢᴇ: <code>/info 9876543210</code>
-𝐈ғ 𝐘ᴏᴜ 𝐅ᴀᴄᴇ 𝐀ɴʏ 𝐏ʀᴏʙʟᴇᴍ 𝐂ᴏɴᴛᴀᴄᴛ 𝐎ᴡɴᴇʀ`,
-        true
+𝐈ғ 𝐘ᴏᴜ 𝐅ᴀᴄᴇ 𝐀ɴʏ 𝐏ʀᴏʙʟᴇᴍ 𝐂ᴏɴᴛᴀᴄᴛ 𝐎ᴡɴᴇʀ`
       );
     }
 
@@ -52,8 +51,7 @@ export default async function handler(req, res) {
 🔹 <code>/info [number]</code> — ɢᴇᴛ ᴅᴇᴛᴀɪʟs ᴏғ ɴᴜᴍʙᴇʀ
 🔹 <code>/help</code> — Hᴇʟᴘ ᴍᴇɴᴊ
 
-<b>Note:</b> 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📢`,
-        true
+<b>Note:</b> 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📢`
       );
     }
 
@@ -76,7 +74,7 @@ export default async function handler(req, res) {
                 `📞 *Mobile:* ${d.mobile || "N/A"}\n👤 *Name:* ${d.name || "N/A"}\n👨‍👦 *Father:* ${d.fname || "N/A"}\n🏠 *Address:* ${d.address || "N/A"}\n📱 *Alternate:* ${d.alt || "N/A"}\n🌐 *Circle:* ${d.circle || "N/A"}\n🆔 *ID:* ${d.id || "N/A"}`
             ).join("\n\n────────────────────\n\n");
 
-            await sendMessage(chatId, reply, true);
+            await sendMessage(chatId, reply);
           } else {
             await sendMessage(chatId, "❌ 𝐍ᴏ 𝐃ᴀᴛᴀ 𝐅ᴏᴜɴᴅ।", true);
           }
